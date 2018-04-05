@@ -1,0 +1,62 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage2.master.vb" Inherits="MasterPage2" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body background="images/adminloginbg.jpg">
+    <form id="form1" runat="server">
+    <div>
+       <table border ="2" style=" height:100%; width :100%;">
+    <tr style ="height:150px;">
+    <td colspan ="2" >
+    <img src="images/admheader_bg.png" width="100%"height="173"/>
+    <%-- style ="background-position: 100%s; height:173px;width:1300px; background-image: url('/desktop1/images/addheader_bg.jpg'); background-repeat: no-repeat;" >--%>
+         </td>
+         
+         </tr>
+         <tr>
+         <td colspan ="2" style ="height :25px;" >
+
+          &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  
+          &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+          <a href ="admin.aspx" tex style="color: #999999"> home </a>&nbsp &nbsp &nbsp
+          <a href ="Add_Product.aspx" style="color: #999999">Add Product</a>&nbsp &nbsp &nbsp
+          <a href ="Delete_Poduct.aspx" style="color: #999999">Delete Product</a>&nbsp &nbsp &nbsp
+          <a href ="Update_Product.aspx" style=" color: #999999;">Update Product</a>&nbsp &nbsp &nbsp
+          <a href ="Admin_feedback.aspx" style="color: #999999">FeedBack</a>&nbsp &nbsp &nbsp
+          <a href ="Admin_Customer.aspx" style="color: #999999">Customer Details</a>&nbsp &nbsp &nbsp
+          <a href ="Admin_product.aspx" style="color: #999999">Product</a>&nbsp &nbsp &nbsp
+          <a href ="Admin_Order.aspx" style="color: #999999">Orders</a>&nbsp &nbsp &nbsp
+          <a href ="Adimn_Change_pwd.aspx" style="color: #999999">Change Password</a>&nbsp &nbsp &nbsp
+     
+             <asp:LinkButton ID="LinkButton1" runat="server">logout</asp:LinkButton>
+  
+          
+         </tr>
+         <tr>
+         <td style ="height:450px ">
+                
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            <p>
+            </p>
+        
+        </asp:ContentPlaceHolder> 
+        
+             
+             
+
+          </td>
+        </tr> 
+    </table>
+
+
+    </div>
+    </form>
+</body>
+</html>
